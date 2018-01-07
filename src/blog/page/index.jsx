@@ -9,9 +9,15 @@ class App extends Component {
     render() {
         return (
             <Layout>
-                <Row>
+                <Row
+                    style={{backgroundColor:'white'}}
+                >
                     <Col span={5} push={19}>
-                        <Card title="标签" style={{ width: '100%' }}>
+                        <Card
+                            title="标签"
+                            style={{ width: '100%'}}
+                            bordered={false}
+                        >
                             <Tag color="magenta">java</Tag>
                             <Tag color="red">react</Tag>
                             <Tag color="volcano">redis</Tag>
@@ -48,7 +54,12 @@ class App extends Component {
                         </Card>
                     </Col>
                     <Col span={19} pull={5}>
-                        <Card title="搞懂 Java IO-面向流的IO" extra={<a href="#">More</a>} style={{ width: '100%' }}>
+                        <Card
+                            title="搞懂 Java IO-面向流的IO"
+                            extra={<a href="#">More</a>}
+                            style={{ width: '100%'}}
+                            bordered={false}
+                        >
                             <MDReactComponent text='
 ## 1. 预备知识
 ### 1.1. 系统调用
